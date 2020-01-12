@@ -6,3 +6,12 @@ export EDITOR='vim';
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK=$ANDROID_HOME
+export ANDROID_NDK=$ANDROID_HOME/../ndk
+
+export PATH=$PATH:$ANDROID_SDK/emulator
+export PATH=$PATH:$ANDROID_SDK/tools
+export PATH=$PATH:$ANDROID_SDK/tools/bin
+export PATH=$PATH:$ANDROID_SDK/platform-tools
