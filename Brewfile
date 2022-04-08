@@ -6,6 +6,7 @@ cask_args appdir: "/Applications"
 
 tap "txn2/tap"
 tap "wix/brew"
+tap "AdoptOpenJDK/openjdk"
 
 ### General
 
@@ -13,6 +14,7 @@ brew "git"
 brew "cloc"
 brew "asdf" # yarn, elixir, helm, kubectl
 # brew "neovim"
+brew "gpg"
 
 ### Mobile
 brew "coreutils"
@@ -27,6 +29,7 @@ brew "aws-iam-authenticator"
 # brew "kubernetes-cli"
 brew "kubectx"
 brew "txn2/tap/kubefwd"
+brew "awscli"
 
 ## Cask Installed Applications
 
@@ -37,6 +40,7 @@ cask "iterm2"
 cask "slack"
 cask "1password"
 cask "visual-studio-code"
+cask "adoptopenjdk8"
 
 ### Divvy General
 

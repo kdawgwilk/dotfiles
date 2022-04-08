@@ -1,15 +1,17 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export MY_USER="kwilk"
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kwilkinson/.oh-my-zsh"
+export ZSH="/Users/$MY_USER/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-DEFAULT_USER="kwilkinson"
+DEFAULT_USER="$MY_USER"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -66,6 +68,7 @@ DEFAULT_USER="kwilkinson"
 plugins=(
   git
   zsh-autosuggestions
+  asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -73,23 +76,5 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-source .exports
-source .aliases
+source ~/.exports
+source ~/.aliases
